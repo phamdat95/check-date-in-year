@@ -11,14 +11,23 @@
 <script>
     function date() {
         var month = document.getElementById("month").value;
-        switch (month  == 1 ? 1 : month  == 3 ? 1: month  == 5 ? 1 : month  == 7 ? 1 : month  == 8 ? 1 : month  == 10 ? 1 : month  == 12 ? 1 : month == 2 ? 2 : month == 4 ? 3 : month == 6 ? 3 : month == 9 ? 3 : month == 11 ? 3 : 0) {
-            case 1:
+        switch (month) {
+            case ('1'):
+            case ('3'):
+            case ('5'):
+            case ('7'):
+            case ('8'):
+            case ('10'):
+            case ('12'):
                 document.getElementById("displayresult").innerHTML = "Tháng " + month + " có 31 ngày";
                 break;
-            case 2:
+            case ('2'):
                 document.getElementById("displayresult").innerHTML = "Tháng " + month + " có 28 hoặc 29 ngày";
                 break;
-            case 3:
+            case ('4'):
+            case ('6'):
+            case ('9'):
+            case ('11'):
                 document.getElementById("displayresult").innerHTML = "Tháng " + month + " có 30 ngày";
                 break;
             default:
